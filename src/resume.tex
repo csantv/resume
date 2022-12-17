@@ -1,0 +1,100 @@
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage{xeCJK}
+\setCJKmainfont{Noto Serif CJK TC}
+\setCJKsansfont{Noto Sans CJK TC}
+\setCJKmonofont{Noto Sans Mono CJK TC}
+
+\usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry} % Document margins
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+    pdftitle={My Resume}
+}
+
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
+\name{CARLOS SANTOS TORO VERA} % Your name
+
+\begin{document}
+%----------------------------------------------------------------------------------------
+%	CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+    \centerline{+51 935144810 $\diamond$ Lima, Peru}
+    \centerline{
+        \href{mailto:csantve@gmail.com}{csantve@gmail.com} $\diamond$
+        \href{https://www.linkedin.com/in/csantve}{linkedin.com/in/csantve} $\diamond$
+        \href{https://github.com/csantv}{github.com/csantv}
+    }
+
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE
+%----------------------------------------------------------------------------------------
+    \begin{rSection}{OBJECTIVE}
+        {Computer Science student seeking full-time programming and IT roles.}
+    \end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+    \begin{rSection}{Education}
+        \textbf{Bachelor of Computer Science}
+        {, Pontificia Universidad Catolica del Peru}
+        \hfill {Expected 2023}
+    \end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+    \begin{rSection}{LANGUAGES}
+        \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+            English & Advanced Level
+            \\
+            Japanese (日本語) & Basic Level
+            \\
+            Spanish & Native language
+        \end{tabular}
+    \end{rSection}
+
+%----------------------------------------------------------------------------------------
+% TECHINICAL STRENGTHS	
+%----------------------------------------------------------------------------------------
+    \begin{rSection}{SKILLS}
+        \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+            Technical Skills & GNU/Linux (Ubuntu, Debian, Arch), Computer diagnostics and repair
+            \\
+            Programming Languages & C, X86 Assembly, Java, Javascript, Typescript, HTML 5
+            \\
+            Databases & MySQL, MariaDB, PostgreSQL
+        \end{tabular}
+    \end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+    \begin{rSection}{PROJECTS}
+        \vspace{-1.25em}
+        \item \textbf{Dovah (ReactJS, Javascript, Typescript)} {Single Page Web Application used as a companion application for students coursing the Thesis Project courses in Pontificia Universidad Catolica del Peru \href{https://github.com/PUCP-INF/Dovah-Frontend}{(Source Code)}}
+        \item \textbf{Dovah Backend (Java, Spring)} {REST API backend written in Java using Spring Framework 2.6.
+        This project was used as the backend of the project's frontend with the same name. \href{https://github.com/PUCP-INF/Dovah-Backend}{(Source Code)}}
+        \item \textbf{Advent of Code 2022 (Java)} {Solutions written in Java for Advent of Code 2022 \href{https://github.com/csantv/AdventOfCode2022}{(Source Code)}}
+        \item \textbf{MOS6502 Emulator (C, Assembly)} {Emulator for the MOS6502 CPU written in C. Tested with two games written in assembly, Pong and Snake \href{https://github.com/csantv/mos6502-emulator}{(Source Code)}}
+    \end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	CERTIFICATIONS SECTION
+%----------------------------------------------------------------------------------------
+    \begin{rSection}{CERTIFICATIONS}
+        \vspace{-1.25em}
+        \item \textbf{CIMA'S - 2016}
+        \item {Computer Assembly, Diagnostics and Support}
+        \item \textbf{CIBERTEC - 2019}
+        \item {Java Fundamentals Developer}
+    \end{rSection}
+
+\end{document}
