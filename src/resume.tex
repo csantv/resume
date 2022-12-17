@@ -1,10 +1,6 @@
 \documentclass{resume} % Use the custom resume.cls style
 
 \usepackage{xeCJK}
-\setCJKmainfont{Noto Serif CJK TC}
-\setCJKsansfont{Noto Sans CJK TC}
-\setCJKmonofont{Noto Sans Mono CJK TC}
-
 \usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry} % Document margins
 \usepackage{hyperref}
 
@@ -16,8 +12,9 @@
     pdftitle={My Resume}
 }
 
-\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
-\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\setCJKmainfont{Noto Serif CJK TC}
+\setCJKsansfont{Noto Sans CJK TC}
+\setCJKmonofont{Noto Sans Mono CJK TC}
 
 \name{CARLOS SANTOS TORO VERA} % Your name
 
@@ -53,11 +50,11 @@
 %----------------------------------------------------------------------------------------
     \begin{rSection}{LANGUAGES}
         \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-            English & Advanced Level
-            \\
-            Japanese (日本語) & Basic Level
-            \\
             Spanish & Native language
+            \\
+            English & Advanced level
+            \\
+            Japanese (\textnormal{\texttt{日本語}}) & Basic level
         \end{tabular}
     \end{rSection}
 
@@ -66,9 +63,11 @@
 %----------------------------------------------------------------------------------------
     \begin{rSection}{SKILLS}
         \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-            Technical Skills & GNU/Linux (Ubuntu, Debian, Arch), Computer diagnostics and repair
+            Technical Skills & Computer assembly, diagnostics and repair
             \\
-            Programming Languages & C, X86 Assembly, Java, Javascript, Typescript, HTML 5
+            Operating Systems & GNU/Linux (Ubuntu, Debian, Arch)
+            \\
+            Programming Languages & Java, Javascript, Typescript, C, C++, X86 Assembly
             \\
             Databases & MySQL, MariaDB, PostgreSQL
         \end{tabular}
